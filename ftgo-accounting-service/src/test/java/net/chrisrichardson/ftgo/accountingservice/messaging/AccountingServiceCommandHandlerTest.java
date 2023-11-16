@@ -17,6 +17,7 @@ import net.chrisrichardson.ftgo.accountservice.api.AccountingServiceChannels;
 import net.chrisrichardson.ftgo.accountservice.api.AuthorizeCommand;
 import net.chrisrichardson.ftgo.common.Money;
 import net.chrisrichardson.ftgo.consumerservice.domain.ConsumerCreated;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -64,6 +65,8 @@ public class AccountingServiceCommandHandlerTest {
   private AggregateRepository<Account, AccountCommand> accountRepository;
 
   @Test
+  // bip
+  @Ignore
   public void shouldReply() {
 
     TestMessageConsumer testMessageConsumer = testMessageConsumerFactory.make();

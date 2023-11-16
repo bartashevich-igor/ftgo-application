@@ -21,7 +21,7 @@ class ComponentTestsPlugin implements Plugin<Project> {
         }
 
         project.configurations {
-            componentTestCompile.extendsFrom testCompile
+            componentTestCompile.extendsFrom testImplementation
             componentTestRuntime.extendsFrom testRuntime
         }
 

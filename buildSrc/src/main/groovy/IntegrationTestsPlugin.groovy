@@ -21,7 +21,7 @@ class IntegrationTestsPlugin implements Plugin<Project> {
         }
 
         project.configurations {
-            integrationTestCompile.extendsFrom testCompile
+            integrationTestCompile.extendsFrom testImplementation
             integrationTestRuntime.extendsFrom testRuntime
         }
 
